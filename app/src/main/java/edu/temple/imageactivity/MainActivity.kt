@@ -1,52 +1,46 @@
 package edu.temple.imageactivity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import edu.temple.imageactivity.adapters.ImageAdapter
-import edu.temple.imageactivity.model.AlphaChar
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
-    private var recyclerView:RecyclerView ? = null
-    private var gridLayoutManager:GridLayoutManager ? = null
-    private var arrayList:ArrayList<AlphaChar> ? = null
-    private var imageAdapter:ImageAdapter ? = null
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        recyclerView = findViewById(R.id.recycler_view)
-        gridLayoutManager = GridLayoutManager(applicationContext, 2, LinearLayoutManager.VERTICAL, false)
-        recyclerView?.layoutManager = gridLayoutManager
-        recyclerView?.setHasFixedSize(true)
-        arrayList = ArrayList()
-        arrayList = setDataInList()
-        imageAdapter = ImageAdapter(applicationContext, arrayList!!)
-        recyclerView?.adapter = imageAdapter
-
+        onClickListener();
     }
-
-    private fun setDataInList() : ArrayList<AlphaChar>{
-        var items: ArrayList<AlphaChar> = ArrayList()
-
-        items.add(AlphaChar(R.drawable.elise, "Elise"))
-        items.add(AlphaChar(R.drawable.evelynn, "Evelynn"))
-        items.add(AlphaChar(R.drawable.kayn, "Kayn"))
-        items.add(AlphaChar(R.drawable.khazix, "Kha'Zix"))
-        items.add(AlphaChar(R.drawable.nunuwill, "Nunu & Willump"))
-        items.add(AlphaChar(R.drawable.rammus, "Rammus"))
-        items.add(AlphaChar(R.drawable.rengar, "Rengar"))
-        items.add(AlphaChar(R.drawable.shen, "Shen"))
-        items.add(AlphaChar(R.drawable.swain, "Swain"))
-        items.add(AlphaChar(R.drawable.warwick, "Warwick"))
-
-
-
-        return items
+    fun onClickListener(){
+        cElise.setOnClickListener{
+            startActivity(Intent(this, Elise_Activity::class.java).putExtra("name", "Elise").putExtra("image",R.drawable.elise))
+        }
+        cEvelynn.setOnClickListener{
+            startActivity(Intent(this, Evelynn_Activity::class.java).putExtra("name", "Evelynn").putExtra("image",R.drawable.evelynn))
+        }
+        cKayn.setOnClickListener{
+            startActivity(Intent(this, Kayn_Activity::class.java).putExtra("name", "Kayn").putExtra("image",R.drawable.kayn))
+        }
+        cKhazix.setOnClickListener{
+            startActivity(Intent(this, KhaZix_Activity::class.java).putExtra("name", "Kha'Zix").putExtra("image",R.drawable.khazix))
+        }
+        cNunuWill.setOnClickListener{
+            startActivity(Intent(this, NunuWillump_Activity::class.java).putExtra("name", "Nunu & Willump").putExtra("image",R.drawable.nunuwill))
+        }
+        cRammus.setOnClickListener{
+            startActivity(Intent(this, Rammus_Activity::class.java).putExtra("name", "Rammus").putExtra("image",R.drawable.rammus))
+        }
+        cRengar.setOnClickListener{
+            startActivity(Intent(this, Rengar_Activity::class.java).putExtra("name", "Rengar").putExtra("image",R.drawable.rengar))
+        }
+        cShen.setOnClickListener{
+            startActivity(Intent(this, Shen_Activity::class.java).putExtra("name", "Shen").putExtra("image",R.drawable.shen))
+        }
+        cSwain.setOnClickListener{
+            startActivity(Intent(this, Swain_Activity::class.java).putExtra("name", "Swain").putExtra("image",R.drawable.swain))
+        }
+        cWarwick.setOnClickListener{
+            startActivity(Intent(this, Warwick_Activity::class.java).putExtra("name", "Warwick").putExtra("image",R.drawable.warwick))
+        }
     }
-
 }

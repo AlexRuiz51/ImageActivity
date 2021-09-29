@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageActivity/app/src/main/res/layout/activity_enlarged.xml" value="0.3307291666666667" />
-        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageActivity/app/src/main/res/layout/activity_main.xml" value="0.3307291666666667" />
-        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageActivity/app/src/main/res/layout/activity_main2.xml" value="0.3307291666666667" />
-        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageActivity/app/src/main/res/layout/grid_layout_list_item.xml" value="0.33" />
+        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageAct/app/src/main/res/layout/activity_elise.xml" value="0.33" />
+        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageAct/app/src/main/res/layout/activity_evelynn.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageAct/app/src/main/res/layout/activity_kayn.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageAct/app/src/main/res/layout/activity_khazix.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageAct/app/src/main/res/layout/activity_main.xml" value="0.3368421052631579" />
+        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageAct/app/src/main/res/layout/activity_nunu_willump.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageAct/app/src/main/res/layout/activity_rammus.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageAct/app/src/main/res/layout/activity_rengar.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageAct/app/src/main/res/layout/activity_shen.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageAct/app/src/main/res/layout/activity_swain.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/ruiz0/AndroidStudioProjects/ImageAct/app/src/main/res/layout/activity_warwick.xml" value="0.5541666666666667" />
       </map>
     </option>
   </component>

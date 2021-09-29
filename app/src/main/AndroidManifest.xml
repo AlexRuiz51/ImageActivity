@@ -8,12 +8,39 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ImageActivity">
+        android:theme="@style/Theme.ImageAct">
         <activity
-            android:name=".Enlarged"
+            android:name="edu.temple.imageactivity.Warwick_Activity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="edu.temple.imageactivity.Swain_Activity"
+            android:exported="true" />
+        <activity
+            android:name="edu.temple.imageactivity.Shen_Activity"
+            android:exported="true" />
+        <activity
+            android:name="edu.temple.imageactivity.Rengar_Activity"
+            android:exported="true" />
+        <activity
+            android:name="edu.temple.imageactivity.Rammus_Activity"
+            android:exported="true" />
+        <activity
+            android:name="edu.temple.imageactivity.NunuWillump_Activity"
+            android:exported="true" />
+        <activity
+            android:name="edu.temple.imageactivity.KhaZix_Activity"
+            android:exported="true" />
+        <activity
+            android:name="edu.temple.imageactivity.Kayn_Activity"
+            android:exported="true" />
+        <activity
+            android:name="edu.temple.imageactivity.Evelynn_Activity"
+            android:exported="true" />
+        <activity
+            android:name="edu.temple.imageactivity.Elise_Activity"
+            android:exported="true" />
+        <activity
+            android:name="edu.temple.imageactivity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
