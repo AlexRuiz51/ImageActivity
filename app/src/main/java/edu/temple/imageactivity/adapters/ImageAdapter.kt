@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import edu.temple.imageactivity.R
 import edu.temple.imageactivity.model.AlphaChar
 
-class AlphaAdapters(var context: Context, var arrayList: ArrayList<AlphaChar>) : RecyclerView.Adapter<AlphaAdapters.ItemHolder>(){
+class ImageAdapter(var context: Context, var arrayList: ArrayList<AlphaChar>) : RecyclerView.Adapter<ImageAdapter.ItemHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemHolder {
         val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.grid_layout_list_item, parent, false)
         return ItemHolder(itemHolder)

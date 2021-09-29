@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import edu.temple.imageactivity.adapters.AlphaAdapters
+import edu.temple.imageactivity.adapters.ImageAdapter
 import edu.temple.imageactivity.model.AlphaChar
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     private var recyclerView:RecyclerView ? = null
     private var gridLayoutManager:GridLayoutManager ? = null
     private var arrayList:ArrayList<AlphaChar> ? = null
-    private var alphaAdapters:AlphaAdapters ? = null
+    private var imageAdapter:ImageAdapter ? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
         recyclerView?.setHasFixedSize(true)
         arrayList = ArrayList()
         arrayList = setDataInList()
-        alphaAdapters = AlphaAdapters(applicationContext, arrayList!!)
-        recyclerView?.adapter = alphaAdapters
+        imageAdapter = ImageAdapter(applicationContext, arrayList!!)
+        recyclerView?.adapter = imageAdapter
 
     }
 
